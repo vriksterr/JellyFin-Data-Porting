@@ -1,0 +1,8 @@
+Data where all the data is stored about the Movies shows Live TV details are in library.db which is inside /Config/data Load it into the DB Browser for SQLite
+
+Use this command to see all the channels list
+SELECT * FROM TypedBaseItems WHERE type LIKE '%LiveTV%';
+
+Use this command to update and verify
+UPDATE TypedBaseItems SET Tags = 'free3' WHERE ExternalId LIKE 'm3u_939f%';
+SELECT * FROM TypedBaseItems WHERE ExternalId LIKE 'm3u_939f%';
